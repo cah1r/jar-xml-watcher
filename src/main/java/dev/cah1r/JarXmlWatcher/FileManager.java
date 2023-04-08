@@ -64,13 +64,13 @@ class FileManager {
 
     private final Predicate<File> shouldBeInDev = file ->
             file.getName().endsWith(".xml")
-            || (getMinutes(file).isPresent()
-                    && file.getName().endsWith(".jar")
+            || file.getName().endsWith(".jar")
+                    && (getMinutes(file).isPresent()
                     && ((getMinutes(file).get() % 2) == 0));
 
     private final Predicate<File> shouldBeInTest = file ->
-            getMinutes(file).isPresent()
-                    && file.getName().endsWith(".jar")
+            file.getName().endsWith(".jar")
+                    && getMinutes(file).isPresent()
                     && ((getMinutes(file).get() % 2) != 0);
 
     private Optional<Integer> getMinutes(File file) {
