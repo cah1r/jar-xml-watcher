@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'dev.cah1r'
-version = '0.0.1-SNAPSHOT'
+version = '0.0.1'
 sourceCompatibility = '17'
 
 mainClassName = 'dev.cah1r.JarXmlWatcher.JarXmlWatcherApplication'
