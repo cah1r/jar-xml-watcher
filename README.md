@@ -1,8 +1,8 @@
 ## JAR & XML File Watcher
 
-This is simple program from example recruiting test which creates three folders: `home`, `dev` and `test`. It is listening home folder and when `jar` or `xml` file appears then it moves it to `dev` or `test` folder after some conditions are met:
-- `.jar` file created on even hour goes to `dev` folder
-- `.jar` file created on odd hour goes to `test` folder
+This is simple program from example recruiting test which creates three folders: `home`, `dev` and `test`. It is listening home folder and when `jar` or `xml` file appears then moves it to `dev` or `test` folder after some conditions are met:
+- `.jar` file created on even minute number goes to `dev` folder
+- `.jar` file created on odd minute number goes to `test` folder
 - `.xml` file goes to `test` folder
 
 ### Building
