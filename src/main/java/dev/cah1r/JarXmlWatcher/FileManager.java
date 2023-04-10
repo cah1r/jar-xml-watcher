@@ -19,9 +19,9 @@ import java.util.stream.Stream;
 @Slf4j
 @Component
 class FileManager {
-    private static final String HOME_PATH = "src/main/resources/home";
-    private static final String DEV_PATH = "src/main/resources/dev";
-    private static final String TEST_PATH = "src/main/resources/test";
+    private static final String HOME_PATH = "home";
+    private static final String DEV_PATH = "dev";
+    private static final String TEST_PATH = "test";
     private int allFilesCounter = 0;
     private int devCounter = 0;
     private int testCounter = 0;

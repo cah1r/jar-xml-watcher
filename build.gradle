@@ -2,11 +2,14 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.0.5'
     id 'io.spring.dependency-management' version '1.1.0'
+    id 'application'
 }
 
 group = 'dev.cah1r'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
+
+mainClassName = 'dev.cah1r.JarXmlWatcher.JarXmlWatcherApplication'
 
 repositories {
     mavenCentral()
@@ -19,6 +22,7 @@ dependencies {
 
     implementation 'org.slf4j:slf4j-api:2.0.7'
     implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-gradle-plugin:3.0.5'
 
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
